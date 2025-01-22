@@ -16,7 +16,7 @@ interface FilterContextType {
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
 export const FilterContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("Batman");
   const [genre, setGenre] = useState("");
   const [year, setYear] = useState("");
   const [type, setType] = useState("");
